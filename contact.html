@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - AI Business Assistant</title>
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <!-- Replace the existing nav section with this -->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <svg class="logo" width="40" height="40" viewBox="0 0 40 40">
+                <circle cx="20" cy="20" r="18" fill="#4A90E2"/>
+                <path d="M15 15 L25 20 L15 25 Z" fill="white"/>
+            </svg>
+            <span>AI Business Assistant</span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html" class="active">Contact</a>
+            <a href="login.html" class="login-btn">Login</a>
+            <a href="signup.html" class="signup-btn">Sign Up</a>
+            <!-- Replace the theme-switcher div with this -->
+            <!-- Update the theme-switcher div -->
+            <div class="theme-switcher">
+                <button class="theme-btn" data-theme="light" id="lightTheme" title="Light Theme">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <button class="theme-btn" data-theme="dark" id="darkTheme" title="Dark Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+    <section class="contact-hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <h1 class="reveal">Get in Touch</h1>
+            <p class="reveal">We'd love to hear from you. Let's create something amazing together.</p>
+        </div>
+    </section>
+
+    <section class="contact-grid">
+        <div class="contact-info">
+            <div class="info-card reveal">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Visit Us</h3>
+                <p>No 109 , Alukatiya new colony ,Near the boodiya, Ratnahangamuwa, Ratnapura</p>
+                <p>Sri Lanka</p>
+            </div>
+            <div class="info-card reveal">
+                <i class="fas fa-envelope"></i>
+                <h3>Email Us</h3>
+                <p>avishkasfernando2001@gmail.com</p>
+               
+            </div>
+            <div class="info-card reveal">
+                <i class="fas fa-phone"></i>
+                <h3>Call Us</h3>
+                <p>071 3549 510</p>
+                <p>Mon-Fri, 9am-6pm</p>
+            </div>
+        </div>
+
+        <div class="contact-form-container reveal">
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <select required>
+                        <option value="" disabled selected>Select Subject</option>
+                        <option value="general">General Inquiry</option>
+                        <option value="support">Technical Support</option>
+                        <option value="business">Business Partnership</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">
+                    Send Message
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <section class="map-section reveal">
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.30596698663!2d-74.25987368715491!3d40.69714941932609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1647043274839!5m2!1sen!2s" 
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Replace existing footer with this enhanced version -->
+    <footer>
+        <div class="footer-bg-circle"></div>
+        <div class="footer-bg-circle"></div>
+        <div class="footer-content">
+            <!-- Left Section -->
+            <div class="footer-section brand">
+                <div class="footer-logo">
+                    <svg class="logo" width="40" height="40" viewBox="0 0 40 40">
+                        <circle cx="20" cy="20" r="18" fill="#4A90E2"/>
+                        <path d="M15 15 L25 20 L15 25 Z" fill="white"/>
+                    </svg>
+                    <h4>AI Business Assistant</h4>
+                </div>
+                <p>Transforming customer service with artificial intelligence</p>
+                <div class="footer-contact">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>avishkasfernando2001@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>071 3549 510</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>No 109 , Alukatiya new colony ,Near the boodiya, Ratnahangamuwa, Ratnapura, Sri Lanka</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Middle Section -->
+            <div class="footer-section links">
+                <h4>Quick Links</h4>
+                <div class="footer-links">
+                    <div class="link-column">
+                        <a href="index.html"><i class="fas fa-chevron-right"></i> Home</a>
+                        <a href="about.html"><i class="fas fa-chevron-right"></i> About</a>
+                        <a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a>
+                       <!-- <a href="services.html"><i class="fas fa-chevron-right"></i> Services</a> --> 
+                    </div>
+                    <div class="link-column">
+                        <a href="privacy.html"><i class="fas fa-chevron-right"></i> Privacy Policy</a>
+                       <!--  <a href="terms.html"><i class="fas fa-chevron-right"></i> Terms of Service</a>-->
+                       <!--  <a href="faq.html"><i class="fas fa-chevron-right"></i> FAQ</a> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Section -->
+            <div class="footer-section social">
+                <h4>Connect With Us</h4>
+                <p>Follow us on social media for updates and insights</p>
+                <div class="social-links">
+                    <a href="#" title="Twitter" class="social-btn"><i class="fab fa-twitter"></i></a>
+                    <a href="#" title="LinkedIn" class="social-btn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" title="Facebook" class="social-btn"><i class="fab fa-facebook"></i></a>
+                    <a href="#" title="Instagram" class="social-btn"><i class="fab fa-instagram"></i></a>
+                    <a href="#" title="GitHub" class="social-btn"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="newsletter">
+                    <h5>Subscribe to Newsletter</h5>
+                    <div class="newsletter-input">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit" class="newsletter-btn">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>&copy; 2024 AI Business Assistant. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="privacy.html">Privacy</a>
+                    <span class="separator">|</span>
+                    <a href="terms.html">Terms</a>
+                    <span class="separator">|</span>
+                    <a href="cookies.html">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        const themeBtns = document.querySelectorAll('.theme-btn');
+        const htmlElement = document.documentElement;
+    
+        // Check for saved theme
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        htmlElement.setAttribute('data-theme', savedTheme);
+        updateActiveButton(savedTheme);
+    
+        // Theme button click handlers
+        themeBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const theme = btn.getAttribute('data-theme');
+                htmlElement.setAttribute('data-theme', theme);
+                localStorage.setItem('theme', theme);
+                updateActiveButton(theme);
+            });
+        });
+    
+        function updateActiveButton(theme) {
+            themeBtns.forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-theme') === theme) {
+                    btn.classList.add('active');
+                }
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - AI Business Assistant</title>
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/auth.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-card">
+            <!-- Update the logo-link section -->
+            <!-- Add after the logo-link div and before h1 in card-header -->
+            <div class="card-header">
+                <a href="index.html" class="logo-link">
+                    <div class="logo-container">
+                        <svg class="logo" width="40" height="40" viewBox="0 0 40 40">
+                            <circle cx="20" cy="20" r="18" fill="#4A90E2"/>
+                            <path d="M15 15 L25 20 L15 25 Z" fill="white"/>
+                        </svg>
+                        <span class="logo-text">AI Business Assistant</span>
+                    </div>
+                </a>
+                <div class="theme-switcher">
+                    <button class="theme-btn" data-theme="light" title="Light Theme">
+                        <i class="fas fa-sun"></i>
+                    </button>
+                    <button class="theme-btn" data-theme="dark" title="Dark Theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+                <h1>Create Account</h1>
+                <p>Join us to experience AI-powered business solutions</p>
+            </div>
+            
+            <form class="auth-form">
+                <div class="form-group">
+                    <div class="input-icon">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Full Name" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-icon">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-icon">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password" required>
+                        <button type="button" class="toggle-password">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-icon">
+                        <i class="fas fa-building"></i>
+                        <select required>
+                            <option value="">Select Business Type</option>
+                            <option value="retail">Retail</option>
+                            <option value="tech">Technology</option>
+                            <option value="finance">Finance</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-options">
+                    <label class="terms">
+                        <input type="checkbox" required>
+                        <span>I agree to the <a href="#">Terms</a> and <a href="#">Privacy Policy</a></span>
+                    </label>
+                </div>
+                <button type="submit" class="submit-btn">
+                    <span>Create Account</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </form>
+
+            <div class="social-login">
+                <p>Or sign up with</p>
+                <!-- Add before closing body tag -->
+                <script src="scripts/auth.js"></script>
+                <script src="scripts/theme.js"></script>
+                
+                <!-- Update social buttons -->
+                <div class="social-buttons">
+                    <button type="button" class="social-btn google" title="Sign up with Google">
+                        <i class="fab fa-google"></i>
+                        <span>Google</span>
+                        <div class="loading-spinner"></div>
+                    </button>
+                    <button type="button" class="social-btn github" title="Sign up with GitHub">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                        <div class="loading-spinner"></div>
+                    </button>
+                </div>
+            </div>
+
+            <div class="auth-footer">
+                <p>Already have an account? <a href="login.html">Login</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

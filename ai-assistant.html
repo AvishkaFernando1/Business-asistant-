@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Assistant Interface - AI Business Assistant</title>
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/ai-assistant.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="ai-interface">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <div class="nav-logo">
+                    <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.5rem;">
+                        <svg class="logo" width="30" height="30" viewBox="0 0 40 40">
+                            <circle cx="20" cy="20" r="18" fill="#4A90E2"/>
+                            <path d="M15 15 L25 20 L15 25 Z" fill="white"/>
+                        </svg>
+                        <span>AI Assistant</span>
+                    </a>
+                </div>
+                <button class="new-chat">
+                    <i class="fas fa-plus"></i> New Chat
+                </button>
+            </div>
+            <div class="chat-history">
+                <div class="history-item active">
+                    <i class="fas fa-comment"></i>
+                    <span>General Inquiry</span>
+                </div>
+                <div class="history-item">
+                    <i class="fas fa-lightbulb"></i>
+                    <span>Feature Ideas</span>
+                </div>
+            </div>
+            <!-- Update the sidebar-footer section -->
+            <div class="sidebar-footer">
+                <div class="footer-settings">
+                    <div class="theme-switcher">
+                        <button class="theme-btn" data-theme="light" title="Light Theme">
+                            <i class="fas fa-sun"></i>
+                        </button>
+                        <button class="theme-btn" data-theme="dark" title="Dark Theme">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                        <button class="theme-btn" data-theme="system" title="System Theme">
+                            <i class="fas fa-laptop"></i>
+                        </button>
+                    </div>
+                    <button class="settings-btn" title="Settings">
+                        <i class="fas fa-cog"></i>
+                    </button>
+                </div>
+                <!-- Update the user-profile section -->
+                <div class="user-profile">
+                    <div class="profile-info">
+                        <!-- 
+                        <div class="avatar-wrapper">
+                            <img src="assets/avatar.png" alt="User Avatar">
+                            <span class="status-indicator"></span>
+                        </div>
+                       
+                        <div class="user-details">
+                            <div class="user-name-wrapper">
+                                <span class="user-name">John Doe</span>
+                                <span class="badge">PRO</span>
+                            </div>
+                            <div class="user-meta">
+                                <span class="user-status">Online</span>
+                                <span class="user-role">Business Analyst</span>
+                            </div>
+                             
+                            
+                        </div>
+                    </div>
+                    <div class="profile-actions">
+                        <button class="profile-menu-btn" title="Profile Settings">
+                            <i class="fas fa-cog"></i>
+                        </button>
+                        <button class="profile-menu-btn" title="Profile Menu">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                        -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="chat-container">
+                <div class="chat-messages">
+                    <div class="message ai">
+                        <!-- 
+                        <div class="message-avatar">
+                            <svg width="30" height="30" viewBox="0 0 40 40">
+                                <circle cx="20" cy="20" r="18" fill="#4A90E2"/>
+                                <path d="M15 15 L25 20 L15 25 Z" fill="white"/>
+                            </svg>
+                        </div>
+                        -->
+                        <!-- 
+                        <div class="message-content">
+                            <p>Hello! I'm your AI assistant. How can I help you today?</p>
+                        </div>
+                        -->
+                    </div>
+                    <!-- 
+                    <div class="message user">
+                        <div class="message-content">
+                            <p>Hi! I need help with setting up my account.</p>
+                        </div>
+                        -->
+                        <div class="message-avatar">
+                            <img src="assets/user.png" alt="User Avatar">
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-input-container">
+                    <div class="input-wrapper">
+                        <textarea placeholder="Type your message here..." rows="1"></textarea>
+                        <button class="send-btn">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                    <!-- Update the input-features section -->
+                    <div class="input-features">
+                        <button class="feature-btn" title="Upload File">
+                            <i class="fas fa-paperclip"></i>
+                        </button>
+                        <button class="feature-btn" title="Voice Input">
+                            <i class="fas fa-microphone"></i>
+                        </button>
+                        <button class="feature-btn" title="Insert Code">
+                            <i class="fas fa-code"></i>
+                        </button>
+                        
+                        <!-- AI Module Icons -->
+                        <!-- Update the AI Module Icons section -->
+                        <!-- Replace the existing ai-module-icons section -->
+                        <div class="ai-module-icons">
+                            <button class="feature-btn ai-model" data-model="gpt2" title="Business Ideas">
+                                <i class="fas fa-lightbulb"></i>
+                                <div class="model-tooltip">
+                                    <h4>Business Ideas</h4>
+                                    <p>Generate profitable business ideas</p>
+                                </div>
+                            </button>
+                            <button class="feature-btn ai-model" data-model="distilbert-base-cased" title="Market Research">
+                                <i class="fas fa-chart-line"></i>
+                                <div class="model-tooltip">
+                                    <h4>Market Research</h4>
+                                    <p>Analyze market and competitors</p>
+                                </div>
+                            </button>
+                            <button class="feature-btn ai-model" data-model="huggingface-summarizer" title="Legal Advice">
+                                <i class="fas fa-balance-scale"></i>
+                                <div class="model-tooltip">
+                                    <h4>Legal Assistant</h4>
+                                    <p>Get legal guidance and summaries</p>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add before closing body tag -->
+    <script src="scripts/ai-models.js"></script>
+    <script src="scripts/ai-assistant.js"></script>
+</body>
+</html>
